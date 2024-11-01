@@ -12,7 +12,7 @@ The robustness and generalization of ISA-PINNs are extensively validated across 
 Boundary conditions can be eliminated from the loss function, and the model can still be trained to achieve similarly high prediction accuracies in both equation simulations.
 
 
-This project builds on the research by Levi McClenny et al. [https://github.com/levimcclenny/SA-PINNs], enhancing training efficiency.
+This project builds on the research by Levi McClenny et al. [https://github.com/levimcclenny/SA-PINNs], enhancing training efficiency and video memory consumption.
 
 The current benchmark addresses the (2+1)-dimensional breaking soliton equation, with the full framework and additional examples planned for future updates.
 
@@ -20,4 +20,5 @@ The current benchmark addresses the (2+1)-dimensional breaking soliton equation,
 ISA-PINNs can be trained with a variety of software configurations, such as:
 
 PyTorch version 2.0.0 or higher
+
 CUDA versions 11 or 12
