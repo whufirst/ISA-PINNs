@@ -44,5 +44,4 @@ This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
 <video controls width="600">
   <source src="https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
