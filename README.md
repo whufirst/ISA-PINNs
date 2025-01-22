@@ -40,15 +40,9 @@ keras version = 2.4.3
 
 The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as GitHub imposes restrictions on data file sizes.
 
-# My Repository
-
 This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
-# My Repository
-
-Here is an embedded video:
-
-<video controls>
-  <source src="https://github.com/whufirst/ISA-PINNs/blob/main/sa-sm1-animation.mp4" type="video/mp4">
+<video controls width="600">
+  <source src="https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
