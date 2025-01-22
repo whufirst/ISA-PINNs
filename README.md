@@ -1,27 +1,29 @@
 # ISA-PINNs
 
-# Abstract
-
-The improved self-adaptive PINNs (ISA-PINNs) are employed to numerically solve the high-order Sawada-Kotera (SK) and breaking soliton (BS) equations.
-The method achieves high prediction accuracy, with relative $L_2$-norm errors in the range of $10^{-4}$ to $10^{-5}$ for both equations.
-This represents a $1$-$2$ order of magnitude improvement in precision compared to previous results for the soliton molecule solutions of the SK equations.
-Additionally, the simulation domain sizes are expanded by $2$-$3$ orders of magnitude while maintaining high precision for the two equations. 
-Despite the larger domains, training time remains comparable due to the self-adaptive weight mechanism and automatic differentiation with the mesh-free method used in some simulations.
-The ISA-PINNs model, developed with both TensorFlow and PyTorch frameworks, offers significantly improved precision compared to conventional self-adaptive PINNs for solving (2+1)-dimensional PDEs.
-The robustness and generalization of ISA-PINNs are extensively validated across multiple solvers for both equations, with parameter scans covering domain sizes, initial and boundary conditions.
-Boundary conditions can be eliminated from the loss function, and the model can still be trained to achieve similarly high prediction accuracies in both equation simulations.
-The ISA-PINNs model is also applied to solve second- and third-order PDEs, demonstrating very high prediction accuracies as presented in the Appendix.
-
+The improved SA-PINNs (ISA-PINNs) are developed to numerically solve the high-order Sawada-Kotera (SK) and breaking soliton (BS) equations, achieving high prediction accuracy with relative $L_2$-norm errors in the range of $10^{-4}$ to $10^{-5}$.
 
 # Improvement
 
-The ISA-PINNs model, implemented with both TensorFlow and PyTorch frameworks, achieves significantly enhanced precision compared to conventional SA-PINNs built on TensorFlow by McClenny et al. for solving ($2$+$1$)-dimensional PDEs.
-The ISA-PINNs model implemented in PyTorch achieves significant speedup and considerably reduced memory consumption compared to its TensorFlow counterpart for solving the BS equation.
+1.  **Extension to 3D PDEs**: While the original SA-PINNs focused on 2D PDEs using TensorFlow, the ISA-PINNs extend the self-adaptive algorithm to 3D PDEs, implemented in both TensorFlow and PyTorch.
+This extension achieves high precision for the BS and heat conduction (HC) equations.
 
-The current work addresses large domain simulations for solving the high-order (1+1)-dimensional SK and (2+1)-dimensional BS equations, where conventional PINNs models often fail.
-The simulation domain sizes are expanded by 2-3 orders of magnitude, maintaining high precision for both the SK and BS equations, showcasing the robustness and effectiveness of the ISA-PINNs approach. 
-For the soliton molecule solutions of the SK equations, the ISA-PINNs model achieves a 1-2 order of magnitude improvement in precision compared to previous results in small domain simulations.
-By systematically scanning domain sizes, the training time and prediction precision remain comparable, attributed to the self-adaptive weight mechanism and the use of automatic differentiation with the mesh-free method in some simulations.
+2.  **Efficiency and Scalability** : The ISA-PINNs PyTorch version offers significant speedup and reduced memory consumption compared to its TensorFlow counterpart for 3D PDEs.
+The TensorFlow version, based on the original SA-PINNs, encounters out-of-memory issues when solving the 3D BS and HC equations with deep neural network models, a challenge efficiently addressed by the PyTorch implementation.
+
+3.  **Improved Usability** : The PyTorch version integrates the L-BFGS algorithm as a direct function call within the framework, enhancing user-friendliness and compatibility across different software configurations.
+In contrast, the original SA-PINNs are constrained to specific software setups, limiting adaptability to future updates.
+
+4.  **Enhanced Accuracy and Larger Domains** : For the SK equation, ISA-PINNs employ the FP64 data type to avoid NaN issues encountered in the original SA-PINNs.
+This approach improves prediction accuracy by $10$–$100$ times compared to prior studies.
+Moreover, the domain sizes for the SK and BS equations in this study are approximately $2$–$3$ orders of magnitude larger than those in earlier works.
+
+The ISA-PINNs PyTorch codes include implementations for the BS and Burgers' equations.
+
+The ISA-PINNs TensorFlow template is provided with the HC2D equation and can also be utilized to compare training speed and memory consumption with the PyTorch version for solving BS and HC equations.
+
+The ISA-PINNs PyTorch version employs a deep neural network (7 hidden layers with 64 neurons each) to achieve high prediction precision.
+In contrast, the ISA-PINNs TensorFlow version, based on the original SA-PINNs, faces memory inefficiency issues with deep neural networks and is unable to train effectively.
+Moreover, the TensorFlow version fails to achieve high prediction accuracy when using a shallow neural network.
 
 # Installation
 ISA-PINNs implemented in PyTorch:
@@ -36,4 +38,4 @@ tensorflow version = 2.3.0
 
 keras version = 2.4.3
 
-The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as GitHub imposes restrictions on data file sizes..
+The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as GitHub imposes restrictions on data file sizes.
