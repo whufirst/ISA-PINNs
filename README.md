@@ -39,3 +39,12 @@ tensorflow version = 2.3.0
 keras version = 2.4.3
 
 The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as GitHub imposes restrictions on data file sizes.
+
+# My Repository
+
+This video demonstrates the evolution of self-adaptive weights for the SM1 case.
+
+<video width="640" height="360" controls>
+  <source src="sa-sm1-animation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
