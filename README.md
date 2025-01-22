@@ -46,7 +46,7 @@ This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
 Neural network architecture:
 
-https://github.com/whufirst/ISA-PINNs/blob/main/isa-pinns.png
+![Example Image](https://github.com/whufirst/ISA-PINNs/raw/main/isa-pinns.png)
 
 <!-- https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4 -->
 <!-- https://gitee.com/wilsonhu/isa-pinns/raw/master/sa-sm1-animation.mp4 -->
