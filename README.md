@@ -42,10 +42,21 @@ The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as 
 
 This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
-[![YouTube Video](https://img.youtube.com/vi/qhd4ZoRVv5c/0.jpg)](https://www.youtube.com/watch?v=qhd4ZoRVv5c)
+<! [![YouTube Video](https://img.youtube.com/vi/qhd4ZoRVv5c/0.jpg)](https://www.youtube.com/watch?v=qhd4ZoRVv5c) -->
 
+https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4
 
 <video width="640" height="360" controls>
   <source src="https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+If the improvements to SA-PINNs are helpful to your work, please consider citing one of the preprint papers listed below.
+
+```
+@article{hu5056812high,
+  title={High-Order Partial Differential Equations Solved by the Improved Self-Adaptive Pinns},
+  author={Hu, Wei and Zheng, Shaolong and Dong, Chao and Chen, Miao and Fei, Jin-Xi and Gao, Ruozhou},
+  journal={Available at SSRN 5056812}
+}
+```
