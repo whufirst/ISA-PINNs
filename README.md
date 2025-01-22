@@ -42,6 +42,9 @@ The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as 
 
 This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
+[![YouTube Video](https://img.youtube.com/vi/qhd4ZoRVv5c/0.jpg)](https://www.youtube.com/watch?v=qhd4ZoRVv5c)
+
+
 <video width="640" height="360" controls>
   <source src="https://github.com/whufirst/ISA-PINNs/raw/refs/heads/main/sa-sm1-animation.mp4" type="video/mp4">
   Your browser does not support the video tag.
