@@ -19,9 +19,9 @@ Moreover, the domain sizes for the SK and BS equations in this study are approxi
 
 The ISA-PINNs PyTorch codes include implementations for the BS and Burgers' equations.
 
-The ISA-PINNs TensorFlow template is provided with the HC2D equation and can also be utilized to compare training speed and memory consumption with the PyTorch version for solving BS and HC equations.
+The ISA-PINNs TensorFlow template is provided with the HC3D equation and can also be utilized to compare training speed and memory consumption with the PyTorch version for solving BS and HC equations.
 
-The ISA-PINNs PyTorch version employs a deep neural network (7 hidden layers with 64 neurons each) to achieve high prediction precision.
+For the 3D HC equation featuring both Gaussian and periodic source terms, ISA-PINNs PyTorch version employs a deep neural network (7 hidden layers with 64 neurons each) to achieve high prediction precision.
 In contrast, the ISA-PINNs TensorFlow version, based on the original SA-PINNs, faces memory inefficiency issues with deep neural networks and is unable to train effectively.
 Moreover, the TensorFlow version fails to achieve high prediction accuracy when using a shallow neural network.
 
