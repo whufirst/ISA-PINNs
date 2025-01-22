@@ -52,12 +52,4 @@ This video demonstrates the evolution of self-adaptive weights for the SM1 case.
   Your browser does not support the video tag.
 </video>
 
-If the improvements to SA-PINNs are helpful to your work, please consider citing one of the preprint papers listed below.
 
-```
-@article{hu5056812high,
-  title={High-Order Partial Differential Equations Solved by the Improved Self-Adaptive Pinns},
-  author={Hu, Wei and Zheng, Shaolong and Dong, Chao and Chen, Miao and Fei, Jin-Xi and Gao, Ruozhou},
-  journal={Available at SSRN 5056812}
-}
-```
