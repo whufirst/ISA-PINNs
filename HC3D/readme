@@ -1,1 +1,1 @@
-Heat conduction (HC) equation.
+Heat conduction (HC) equation featuring only Gaussian source terms solved with ISA-PINNs TensorFlow template, which also be utilized to compare training speed and memory consumption with the PyTorch version for solving BS and HC equations.
