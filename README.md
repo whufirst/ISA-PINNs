@@ -4,18 +4,19 @@ The improved SA-PINNs (ISA-PINNs) are developed to numerically solve the high-or
 
 # Improvement
 
-1.  **Extension to 3D PDEs**: While the original SA-PINNs focused on 2D PDEs using TensorFlow, the ISA-PINNs extend the self-adaptive algorithm to 3D PDEs, implemented in both TensorFlow and PyTorch.
-This extension achieves high precision for the BS and heat conduction (HC) equations.
+1.  **Extension to 3D PDEs**: While the original SA-PINNs focused on 2D PDEs using TensorFlow, ISA-PINNs extend the self-adaptive algorithm to 3D PDEs, implemented in both TensorFlow and PyTorch.
+This extension enables high-precision solutions for the BS and heat conduction (HC) equations using deep neural networks, overcoming training failures encountered with the original SA-PINNs.
 
-2.  **Efficiency and Scalability** : The ISA-PINNs PyTorch version offers significant speedup and reduced memory consumption compared to its TensorFlow counterpart for 3D PDEs.
+2.  **Enhanced Accuracy and Larger Domains** : Prediction accuracies for the SK equation improve by $10$–$100$ times compared to prior studies using conventional PINNs.
+Additionally, the computational domain is expanded by 2–3 orders of magnitude while maintaining high precision for the SK and BS equations, a capability not previously achieved with conventional PINNs.
+Specifically for the BS equation, previous simulation domains ($x\times y\times t = [0,1]\times [0,1] \times [-1,1]$) were insufficient to capture the breaking soliton behavior, unlike our significantly larger domain of $x\times y\times t = [-40, 40]\times [-40, 40] \times [-4,4]$.
+
+3.  **Efficiency and Scalability** : The ISA-PINNs PyTorch version offers significant speedup and reduced memory consumption compared to its TensorFlow counterpart for 3D PDEs.
 The TensorFlow version, based on the original SA-PINNs, encounters out-of-memory issues when solving the 3D BS and HC equations with deep neural network models, a challenge efficiently addressed by the PyTorch implementation.
 
-3.  **Improved Usability** : The PyTorch version integrates the L-BFGS algorithm as a direct function call within the framework, enhancing user-friendliness and compatibility across different software configurations.
+4.  **Improved Usability** : The PyTorch version integrates the L-BFGS algorithm as a direct function call within the framework, enhancing user-friendliness and compatibility across different software configurations.
 In contrast, the original SA-PINNs are constrained to specific software setups, limiting adaptability to future updates.
 
-4.  **Enhanced Accuracy and Larger Domains** : For the SK equation, ISA-PINNs employ the FP64 data type to avoid NaN issues encountered in the original SA-PINNs.
-This approach improves prediction accuracy by $10$–$100$ times compared to prior studies.
-Moreover, the domain sizes for the SK and BS equations in this study are approximately $2$–$3$ orders of magnitude larger than those in earlier works.
 
 The ISA-PINNs PyTorch codes include implementations for the BS and Burgers' equations.
 
