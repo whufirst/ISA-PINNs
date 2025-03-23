@@ -45,6 +45,14 @@ This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
 [![YouTube Video](https://img.youtube.com/vi/qhd4ZoRVv5c/0.jpg)](https://www.youtube.com/watch?v=S9OBgS5tkms&ab_channel=WayHard)
 
+# Citation
+
+    @article{hu5056812high,
+      title={High-order partial differential equations solved by the improved self-adaptive PINNs},
+      author={Hu, Wei and Zheng, Shaolong and Dong, Chao and Chen, Miao and Fei, Jin-Xi and Gao, Ruozhou},
+      journal={Available at SSRN 5056812}
+    }
+
 Neural network architecture:
 
 ![Example Image](https://github.com/whufirst/ISA-PINNs/raw/main/isa-pinns.png)
