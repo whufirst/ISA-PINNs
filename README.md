@@ -50,8 +50,9 @@ This video demonstrates the evolution of self-adaptive weights for the SM1 case.
     @article{hu5056812high,
       title={High-order partial differential equations solved by the improved self-adaptive PINNs},
       author={Hu, Wei and Dong, Chao},
-      journal={Available at SSRN 5056812}
+      journal={Available at SSRN 5184258}
     }
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5184258
 
 Neural network architecture:
 
