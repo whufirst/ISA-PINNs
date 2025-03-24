@@ -1,6 +1,16 @@
 # ISA-PINNs
 
-The improved SA-PINNs (ISA-PINNs) are developed to numerically solve the high-order Sawada-Kotera (SK) and breaking soliton (BS) equations, achieving high prediction accuracy with relative $L_2$-norm errors in the range of $10^{-4}$ to $10^{-5}$.
+# Preprint
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5184258
+
+# Citation
+
+    @article{hu5056812high,
+      title={High-order partial differential equations solved by the improved self-adaptive PINNs},
+      author={Hu, Wei and Dong, Chao},
+      journal={Available at SSRN 5184258}
+    }
 
 # Improvement
 
@@ -44,15 +54,6 @@ The complete datasets are available at https://gitee.com/wilsonhu/isa-pinns, as 
 This video demonstrates the evolution of self-adaptive weights for the SM1 case.
 
 [![YouTube Video](https://img.youtube.com/vi/qhd4ZoRVv5c/0.jpg)](https://www.youtube.com/watch?v=S9OBgS5tkms&ab_channel=WayHard)
-
-# Citation
-
-    @article{hu5056812high,
-      title={High-order partial differential equations solved by the improved self-adaptive PINNs},
-      author={Hu, Wei and Dong, Chao},
-      journal={Available at SSRN 5184258}
-    }
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5184258
 
 Neural network architecture:
 
