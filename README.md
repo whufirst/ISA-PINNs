@@ -5,7 +5,7 @@
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5184258
 
 # Citation
-
+If you find this useful in your research, please consider citing:
     @article{hu5184258high,
       title={High-order partial differential equations solved by the improved self-adaptive PINNs},
       author={Hu, Wei and Dong, Chao},
